@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="./web_assignment_related_stuff/logo/rlogo.png">
+    <title>Reading Progress</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navelements">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book_explorer.html">Book Explorer</a></li>
+            <li><a href="random_book.html">Random Book Recommender</a></li>
+            <li><a href="reading_flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <h3 id="progressh3">Let's check the progress</h3>
+    <form id="bookProgress">
+        Total Pages : <input type="number" name="totalpages" id="totpage"><br>
+        Pages Read : <input type="number" name="pageread" id="pgread"><br>
+        Reading Speed(pages per day) : <input type="number" name="pagespday" id="pperd"><br>
+
+        <div class="output-group">
+        <span>Percentage complited : <output name="ptocomplite" id="ptc">0%</output></span><br>
+        <span>Estimated time to Complite : <output name="timetocomplite" id="tocp">0 days</output></span><br>
+        </div>
+
+    </form>
+
+    <fieldset id="tosaveprogress">
+        <legend id="psave">SAVE YOUR PROGRESS</legend>
+        <form id="nameget">
+            Enter you name : <input type="text" name="name" id="cusname" placeholder="Alan Smith">
+            <button id="savechanges">SAVE CHANGES</button>
+        </form>
+    </fieldset>
+    
+
+    <figure>
+    <img src="./web_assignment_related_stuff/logo/bookreading.jpg" alt="funimage" id="funimage">
+    <figcaption>READING MAKES A FULL MAN !</figcaption>
+    </figure>
+
+<script src="readingprogress.js"></script>
+</body>
+</html>

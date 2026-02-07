@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="./web_assignment_related_stuff/logo/rlogo.png">
+    <title>Random Books</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="randombb">
+    <nav>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navelements">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="book_explorer.html">Book Explorer</a></li>
+            <li><a href="reading_progress.html">Reading Progress</a></li>
+            <li><a href="reading_flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav><br>
+    <br>
+    <br>
+    <br>
+
+<div class="main-layout">
+    <aside class="sidebar">
+    <div class="genredrop">
+        <button class="dropbtn">SELECT THE GENRE</button>
+        <div class="dropcontent">
+            <select id="genreselect">
+                <option value="romance">romance</option>
+                <option value="fantasy-sifi">fantasy-sifi</option>
+                <option value="historic friction">historic friction</option>
+                <option value="mystery-thriller">mystery-thriller</option>
+            </select>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<div class="lengthdrop">
+    <button class="dropbtn">SELECT THE LENGTH</button>
+        <div class="dropcontent">
+           <select id="lengthselect">
+                <option value="short">short</option>
+                <option value="medium">medium</option>
+                <option value="lengthy">lengthy</option>
+            
+            </select>
+    </div>
+</div>
+<br>
+    <br>
+    <br>
+    
+
+<button class="dropbtn" id="pickfromdrop">PICK A BOOK</button><br>
+</aside>
+<div id="Randomresult"></div>
+</div>
+<a href="https://www.amazon.com/amz-books/store"  target="_blank"><button id="buybutton">BUY NOW</button></a>
+  
+
+
+<h2>Save the Recommendations </h2>
+<form id="recom">
+    <label class="rec">Enter Your Name</label>
+    <input type="text" name="cn" id="recomendcus">
+    <label class="rec">Book Name</label>
+    <input type="text" name="bn" id="recomendbk">
+    <button id="recbtn">Save</button>
+</form>
+
+
+
+<script type="module" src="randomb.js"></script>
+</body>
+</html>

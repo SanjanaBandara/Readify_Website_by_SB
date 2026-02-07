@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="./web_assignment_related_stuff/logo/rlogo.png">
+    <title>Book Explorer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navelements">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reading_progress.html">Reading Progress</a></li>
+            <li><a href="random_book.html">Random Book Recommender</a></li>
+            <li><a href="reading_flow.html">Reading Flow</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+<main class="explorer-container">
+    <aside class="filter-sidebar">
+        <h3 id="filters">Filters</h3>
+    <div class="filter-section">
+        <input type="text" id="search-input" placeholder="search by title">
+
+        <select id="genrefilter">
+            <option value="all">All Genres</option>
+            <option value="romance">Romance</option>
+            <option value="fantasy-sifi">Fantasy-Sifi</option>
+            <option value="historic friction">Historic-Friction</option>
+            <option value="mystery-thriller">Mystery-Thriller</option>
+        </select>
+
+        <select id="author-filter">
+            <option value="all">All Authors</option>
+            <option value="Fyodor Dostoevsky">Fyodor Dostoevsky</option>
+            <option value="Charles Dickens">Charles Dickens</option>
+            <option value="Leo Tolstoy">Leo Tolstoy</option>
+            <option value="Robert Greene">Robert Greene</option>
+
+        </select>
+
+    </div>
+</aside>
+<section id="book-content">
+    <h2>Book Overview</h2>
+    <div id="book-container" class="booklist">
+    </div>
+    <div id="forpaging" class="pagination">
+    </div>
+</section>
+</main>
+
+
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+            </div>
+        </div>
+    </div>
+
+<script type="module" src="bookstorage.js"> </script>
+</body>
+</html>
